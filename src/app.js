@@ -12,11 +12,19 @@ const postModel = require("./models/post.model")
 const app = express()
 
 
-const cors = require('cors');
+const cors = require("cors");
+
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://create-posts-p5qp-oxuvgoqra-atulkumar9451.vercel.app", // ✅ Vercel frontend
+  "https://show-posts-feed.onrender.com" // ✅ Backend domain
+];
+
 app.use(cors({
-  origin: "https://show-posts-feed.onrender.com",  // Vercel ka live URL
+  origin: allowedOrigins,
   credentials: true
 }));
+
 
 
 app.use(express.json());  //ye tab use hota hai jab data raw format me aaa raha tha j express usko readadble bana deta tha ab data form data me aa raha hai ab dusra 
