@@ -6,7 +6,7 @@ const uploadFile = require('./services/storage.service');
 // run();
 
 const postModel = require("./models/post.model")
-const cors = require('cors');
+
 
 
 const app = express()
