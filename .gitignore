@@ -1,0 +1,41 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables (API keys, DB URLs, secrets)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Build / compiled output (agar transpile karte ho)
+dist/
+build/
+
+# Coverage reports (agar testing use karte ho)
+coverage/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
