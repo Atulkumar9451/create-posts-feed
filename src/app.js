@@ -12,7 +12,7 @@ const cors = require('cors');
 const app = express()
 
 
-import cors from "cors";
+const cors = require('cors');
 app.use(cors({
   origin: "https://show-posts-feed.onrender.com",  // Vercel ka live URL
   credentials: true
